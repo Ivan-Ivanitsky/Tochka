@@ -1,0 +1,160 @@
+@media(max-width:2561px){
+    .form-cargo{
+        &__col-media{
+            display: none;
+        }
+    }
+    .items{
+        &__media-adress{
+            display: none;
+        }
+    }
+}
+
+
+@media(max-width:991px){
+    .form-route__info{
+          padding: 20px;
+    }
+}
+
+@media(max-width:767px){
+  .form-route__info{
+    display: none;
+  }
+  .form-time__info{
+      display: block;
+  }
+
+}
+
+
+@media(max-width:597px){
+    .order__header{
+        font-size: 32px;
+    }
+}
+
+
+@media(max-width:576px){
+    .form-route__info{
+         display: none;
+    }
+    .form-time{
+        &__info{
+            font-size: 15px;
+            padding: 17px;
+        }
+    
+        &__text{
+            line-height: 1.3;
+            font-stretch: expanded;
+        }
+    }
+
+    .form-transport__list {
+        top: 30px;
+    }
+    
+
+}
+
+
+@media(max-width:375px){
+    .order__header{
+        font-size: 28px;
+    }
+
+    .form-cargo{
+
+        &__items-type{
+            width: 165px;
+        }
+
+        &__items-class{
+            display: none;
+        }
+
+        &__col{
+            width: 165px;
+            margin-left: 12px;
+        }
+
+        &__items-price{
+            width: 100%;
+            margin: 0;
+        }
+
+
+         &__media-wrap{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__col-media{
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 16px;
+        }
+
+        &__wrap-celsius{
+            width: 165px;
+        }
+        &__wrap-celsius2{
+            margin-left: 12px;
+            width: 165px;
+        }
+        &__choice{
+            padding: 14px 13px 14px 13px;
+            &::placeholder{
+                font-size: 15px;
+                font-weight: 400;
+                color: #000;
+            }
+        }
+
+        &__list{
+            top: 30px;
+        } 
+        
+    }
+
+    .form-time{
+        &__text{
+            padding:13px 64px 13px 14px;
+            line-height: 1.3;
+            font-stretch: expanded;
+        }
+    }
+
+        .items{
+            &__item-adress{
+                display: none;
+            }
+            &__media-adress{
+                position: absolute;
+                margin-left: 25px;
+                color: #CFCFCF;
+                font-size: 15px;
+                display: block;
+                white-space: nowrap;
+                &::after{
+                    content: "";
+                    width: 100px;
+                    height: 20px;
+                    position: absolute;
+                    left: 90px;
+                    background:  linear-gradient(to left, #4B4B4F  50%, transparent);
+                }
+            }
+        }
+    }
+  
+
+
+@media(max-width:320px){
+    .label{
+        font-size: 12px;
+    }
+}

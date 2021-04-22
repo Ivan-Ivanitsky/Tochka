@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Test</title>
+</head>
+
+<body>
+    <section class="order">
+        <div class="container">
+            <h1 class="order__header">
+                FTL: Прямая машина
+            </h1>
+            <form class="form-route">
+                <div class="form-route__wrapper">
+                    <div class="form-route__elements elements">
+                        <div class="form-route__circle circle">1</div>
+                        <div class="form-route__title title">Маршрут</div>
+                    </div>
+                    <div class="form-route__col">
+                        <div class="form-route__label label">Откуда</div>
+                        <input class="form-route__choice choice">
+                        <div class="form-route__label label">Куда</div>
+                        <input class="form-route__choice choice">
+                    </div>
+                </div>
+                <div class="form-route__info info">Для расчета стоимости необходимо ввести параметры груза, пункты
+                    отправки
+                    <br> и прибытия.
+                </div>
+            </form>
+
+
+            <form class="form-transport">
+                <div class="form-transport__elements elements">
+                    <div class="form-transport__circle circle">2</div>
+                    <div class="form-transport__title title">Транспорт</div>
+                </div>
+                <div class="form-transport__col">
+                    <div class="form-transport__items">
+                        <div class="form-transport__label label">Грузоподъёмность </div>
+                        <div class="form-transport__wrap">
+                            <i class='form-transport__dropdown-click dropdown'></i>
+                            <div class="form-transport__select select">Не выбрана</div>
+                            <ul class="form-transport__list list">
+                                <li class="form-transport__items-list">Вариант 1</li>
+                                <li class="form-transport__items-list">Вариант 2</li>
+                                <li class="form-transport__items-list">Вариант 3</li>
+                                <li class="form-transport__items-list">Вариант 4</li>
+                                <li class="form-transport__items-list">Вариант 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-transport__items-second">
+                        <div class="form-transport__label label">Способ погрузки</div>
+                        <div class="form-transport__wrap">
+                            <i class='form-transport__dropdown-click dropdown'></i>
+                            <div class="form-transport__select form-transport__select_active select">Задняя</div>
+                            <ul class="form-transport__list list">
+                                <li class="form-transport__items-list">Вариант 1</li>
+                                <li class="form-transport__items-list">Вариант 2</li>
+                                <li class="form-transport__items-list">Вариант 3</li>
+                                <li class="form-transport__items-list">Вариант 4</li>
+                                <li class="form-transport__items-list">Вариант 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="form-cargo">
+                <div class="form-cargo__elements elements">
+                    <div class="form-cargo__circle circle">3</div>
+                    <div class="form-cargo__title title">Груз</div>
+                </div>
+                <div class="form-cargo__media-wrap">
+                    <div class="form-cargo__items-type">
+                        <div class="form-cargo__label label">Тип груза</div>
+                        <div class="form-cargo__wrap-type">
+                            <i class='form-cargo__dropdown-click dropdown'></i>
+                            <div class="form-cargo__select select">Не выбран</div>
+                            <ul class="form-cargo__list list">
+                                <li class="form-cargo__items-list">Вариант 1</li>
+                                <li class="form-cargo__items-list">Вариант 2</li>
+                                <li class="form-cargo__items-list">Вариант 3</li>
+                                <li class="form-cargo__items-list">Вариант 4</li>
+                                <li class="form-cargo__items-list">Вариант 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-cargo__col">
+                        <div class="form-cargo__items-class">
+                            <div class="form-cargo__label label">Класс опасности</div>
+                            <div class="form-cargo__wrap-class">
+                                <div class="form-cargo__shadow"></div>
+                                <i class='form-cargo__dropdown-click dropdown'></i>
+                                <div class="form-cargo__select-danger select">
+                                    <div class="form-cargo__item-text">
+                                        Класс 5 — Окисляющие вещества и органические перекиси
+                                    </div>
+                                </div>
+                                <ul class="form-cargo__list list">
+                                    <li class="form-cargo__items-list">Вариант 1</li>
+                                    <li class="form-cargo__items-list">Вариант 2</li>
+                                    <li class="form-cargo__items-list">Вариант 3</li>
+                                    <li class="form-cargo__items-list">Вариант 4</li>
+                                    <li class="form-cargo__items-list">Вариант 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-cargo__items-price">
+                            <div class="form-cargo__label label">Объявленная ценность, ₽</div>
+                            <div class="form-cargo__wrap-price">
+                                <input class='form-cargo__choice-price choice' placeholder='&ge; 1'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-cargo__mode">
+                    <div class="form-cargo__input-wrap">
+                        <label class='form-cargo__label'>
+                            <input type="checkbox" class="form-cargo__checkbox">
+                            <div class='form-cargo__fake-checkbox'><img src="./icon/Shape.png" alt="Shape"></div>
+                        </label>
+                        <div class="form-cargo__text">Требуется температурный режим</div>
+                    </div>
+                </div>
+
+                <div class="form-cargo__col-media">
+                    <div class="form-cargo__wrap-celsius">
+                        <div class="form-cargo__label label">От, °C</div>
+                        <input class="form-cargo__choice choice" placeholder="-20">
+                    </div>
+                    <div class="form-cargo__wrap-celsius2">
+                        <div class="form-cargo__label label">До, °C</div>
+                        <input class="form-cargo__choice choice" placeholder="+23">
+                    </div>
+                </div>
+            </form>
+
+            <form class="form-time">
+                <div class="form-time__wrapper">
+                    <div class="form-time__elements elements">
+                        <div class="form-time__circle circle">4</div>
+                        <div class="form-time__title title">Время</div>
+                    </div>
+                    <div class="form-time__wrap-content">
+                        <div class="form-time__label label">Когда прибыть на точку</div>
+                        <div class="form-time__label-km label">700 км в день</div>
+                    </div>
+                    <div class="form-time__col">
+                        <div class="form-time__choice choice">
+                            <div class="items">
+                                <div class="items__item-circle items__item-circle_active"></div>
+                                <div class="items__item-adress">Адрес не указан</div>
+                                <div class="items__media-adress">Длинный адрес с градиентом</div>
+                            </div>
+                            <div class="form-time__select form-time__select_active">НЕ ВЫБРАНО</div>
+                        </div>
+                        <div class="form-time__choice choice">
+                            <div class="items">
+                                <div class="items__item-circle"></div>
+                                <div class="items__item-adress2">Адрес не указан</div>
+                            </div>
+                            <div class="form-time__select">НЕ ВЫБРАНО</div>
+                        </div>
+
+                        <div class="form-time__comments-wrap">
+                            <div class="form-time__label label">Комментарий к заказу</div>
+                               <textarea class="form-time__text" placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+                        </div>
+                        <div class="form-time__info info">Для расчета стоимости необходимо ввести параметры груза,
+                            пункты отправки
+                            <br> и прибытия.
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

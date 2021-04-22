@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Helvetica-regular ';
+    src: local('Helvetica-regular'), local('Helvetica-regular'),
+        url('../fonts/HelveticaNeue-CondensedRegular.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-CondensedRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica-Neue';
+    src: local('Helvetica Neue Bold'), local('Helvetica-Neue-Bold'),
+        url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-CondensedBold.woff') format('woff'),
+        url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+
+
+*{
+    font-family: 'Helvetica-regular ','Helvetica-Neue';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    padding: 0 17px 0 17px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+@import './blocks/title/title';
+@import './blocks/elements/elements';
+@import './blocks/circle/circle';
+@import './blocks/label/label';
+@import './blocks/choise/choice';
+@import './blocks/info/info';
+@import './blocks/select/select';
+@import './blocks/dropdown/dropdown';
+@import './order';
+@import './blocks/activeClassJS/_activeClass';
+@import './blocks/media/media';
